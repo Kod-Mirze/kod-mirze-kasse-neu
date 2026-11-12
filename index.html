@@ -25,7 +25,7 @@ header{padding:18px 4px 12px;display:flex;justify-content:space-between;align-it
 <section id="daten"><div class="card"><h2>Export & Datensicherung</h2><p class="muted">Exportiere deine Verkaufsdaten zur eigenen Prüfung.</p><button class="primary wide" id="csv">CSV exportieren</button><button class="wide" id="json">Datensicherung herunterladen</button><label>Daten wiederherstellen (JSON)</label><input type="file" id="restore" accept=".json,application/json"><button class="danger wide" id="clear">Alle lokalen Daten löschen</button><p class="notice">Die Daten bleiben nur in diesem Browser auf diesem iPad. Browserdaten löschen oder Gerätewechsel kann Datenverlust verursachen. Regelmäßig exportieren und sichern.</p></div></section>
 </main>
 <script>
-const items=[["Ćevapi · 7 Stück",10],["Ćevapi · 10 Stück",13],["Janjetina · 1 kg",35],["Balkan Grillteller",40]];
+const items=[["Ćevapi · 7 Stück",10],["Ćevapi · 10 Stück",13],["Janjetina · 1 kg",35],["Balkan Grillteller",40],["Kola",2],["Fanta",2]];
 let cart={},db=JSON.parse(localStorage.getItem("km_db")||'{"sales":[],"closes":[]}');
 const euro=n=>(Number(n)||0).toLocaleString("de-DE",{style:"currency",currency:"EUR"});
 const today=()=>new Date().toLocaleDateString("de-DE");
